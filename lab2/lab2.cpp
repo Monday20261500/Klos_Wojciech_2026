@@ -1,4 +1,4 @@
-using namespace std;
+using namespace std;      // poprawnie
 #include <iostream>
 
 // ZADANIE 1:
@@ -27,7 +27,7 @@ public:
 // ZADANIE 2:
 class Tablica {
     private:
-        int* wskaznik = NULL;
+        int* wskaznik = NULL;       // rozmiar?
     public:
         Tablica()
         {
