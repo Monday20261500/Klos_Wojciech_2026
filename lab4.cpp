@@ -1,4 +1,4 @@
-using namespace std;
+using namespace std;  // poprawnie
 #include <iostream>
 #include <math.h>
 
