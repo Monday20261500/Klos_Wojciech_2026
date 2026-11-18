@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>   // do poprawy we wskazanych miejscach
 using namespace std;
 
 // zadania 1 - 6
@@ -26,12 +26,14 @@ class Rower : private Pojazd {
         void zatrzymaj() { cout<<"Rower modelu "<<model<<" się zatrzymuje.\n"; }
 };
 
-// dziedziczenie prywatne powoduje, że zmienne dziedziczone z Pojazdu stają się prywatne.
+// dziedziczenie prywatne powoduje, że zmienne dziedziczone z Pojazdu stają się prywatne // w klasach Rower i Samochod
 
 
 // zadanie 8 i 10
 
-class Silnikowy : Samochod{    
+class Silnikowy : Samochod{      // niedobrze; tutaj chodzi o problem diamentu, ktory nie zostal rozwiazany! do poprawy; uwaga na tryby dziedziczenia: po drodze wprowadzil Pan tryby private - niedobrze
+                                 // az dziw,ze tu nie ma bledu kompilacji
+                                 // nadmiernie skrócił Pan rozwiązanie; trzeba było rozwiazac poszczególne zadania w odrebnych funkcjach wywoływanych w petli while-switch-case
     public:
         Silnikowy(string Marka, string Model) : Samochod(Marka,Model) {};
         void przyspiesz() {};
